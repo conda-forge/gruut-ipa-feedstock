@@ -1,5 +1,5 @@
 {% set name = "gruut-ipa" %}
-{% set version = "0.12.0" %}
+{% set version = "0.13.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gruut-ipa-{{ version }}.tar.gz
-  sha256: 564e2e77d3076b66294845d14db452dd44ff258431f38c415696819949948bc7
+  sha256: 71776eb99f46e119ab14d3d4e536f54317133607cc2f6bad9711ab51f1bec66e
 
 build:
   number: 0
@@ -22,6 +22,7 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - numpy
     - python >=3.6
 
 test:
